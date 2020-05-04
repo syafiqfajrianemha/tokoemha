@@ -1,0 +1,212 @@
+@font-face {
+    font-family: roboto_bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: roboto_regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+html {
+    position: relative;
+}
+
+body {
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+
+/* Navbar */
+.navbar .container .navbar-brand {
+    font-family: 'roboto_bold';
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+a.active {
+    color: black !important;
+    font-family: 'roboto_bold' !important;
+}
+
+.navbar .container .navbar-nav a {
+    font-family: 'roboto_regular';
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(../images/DSC_0826.JPG);
+    background-size: cover;
+    height: 300px;
+    background-position: -40px 0;
+    background-repeat: no-repeat;
+}
+
+.jumbotron .display-4 {
+    font-family: 'roboto_bold';
+    text-shadow: 3px 0px 5px white;
+    font-size: 50px;
+}
+
+.jumbotron a {
+    text-decoration: none;
+    color: black;
+    font-family: 'roboto_regular';
+    font-size: 20px;
+    text-shadow: 5px 0px 10px white;
+}
+
+/* Tentang Kami */
+section.tentang {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section.tentang h3 {
+    font-family: 'roboto_regular';
+}
+
+section.tentang hr {
+    width: 140px;
+    border: 2px solid #46B35F;
+}
+
+/* Galeri */
+section.galeri {
+    background-color: #eeeeee;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section.galeri h3 {
+    font-family: 'roboto_regular';
+}
+
+section.galeri hr {
+    width: 40px;
+    border: 2px solid #46B35F;
+}
+
+
+
+/* 
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 1;
+    transition: .8s;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .7);
+}
+
+.overlay img {
+    max-height: 100%;
+    max-width: 100%;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, .5);
+}
+
+.overlay:target img {
+    animation: zoomDanFade 1s;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    margin-left: 205px;
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes zoomDanFade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+} */
+
+/* Hubungi Kami */
+section.hubungi {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section.hubungi h3 {
+    font-family: 'roboto_regular';
+}
+
+section.hubungi hr {
+    width: 140px;
+    border: 2px solid #46B35F;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333333;
+    padding: 20px 0px;
+    margin-bottom: 0;
+}
+
+footer p {
+    color: rgb(247, 247, 247);
+}
+
+footer p i {
+    color: rgb(211, 48, 48);
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+div.formLogin div.container div.col-sm-4 {
+    margin: 100px auto;
+}
+
+/* Dekstop Version */
+@media (min-width: 992px) {
+    section.tentang h3 {
+        text-transform: uppercase;
+    }
+
+    section.galeri h3 {
+        text-transform: uppercase;
+    }
+
+    section.hubungi h3 {
+        text-transform: uppercase;
+    }
+
+    .jumbotron {
+        background-size: cover;
+        height: 600px;
+        background-position: 0 -100px;
+        padding-top: 250px;
+        background-attachment: fixed;
+    }
+
+    .navbar .container .navbar-nav a {
+        text-transform: uppercase;
+    }
+}
